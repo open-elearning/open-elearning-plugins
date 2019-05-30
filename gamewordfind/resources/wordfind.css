@@ -1,0 +1,143 @@
+/**
+* Wordfind.js 0.0.1
+* (c) 2012 Bill, BunKat LLC.
+* Wordfind is freely distributable under the MIT license.
+* For all details and documentation:
+*     http://github.com/bunkat/wordfind
+*/
+
+#mainpuzzlewords {
+	position :absolute;
+	left:10px;
+	top:10px;
+	width: 550px;
+	height : 650px;
+	border:solid 1px gray;
+	margin: 0 auto;
+	max-width: 80rem;
+	text-align : center;
+	overflow:visible;
+}
+
+/**
+* Styles for the puzzle
+*/
+#puzzle {
+
+	margin-left:auto;
+	margin-right:auto;
+	position :relative;
+	display: inline-block;
+	border: 1px solid black;
+	padding: 0rem;
+	transform-origin: top left;
+}
+
+#puzzle > div { /* rows */
+  width: 100%;
+  margin: 0;
+}
+
+/* style for each square in the puzzle */
+.puzzleSquare {
+/*height: 7vw;
+width: 7vw;*/
+text-transform: uppercase;
+background-color: white;
+border: 0;
+height: 2.5rem;
+width: 2.5rem;
+font: 2.0rem sans-serif;
+}
+
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/* indicates when a square has been selected */
+#puzzle .selected {
+  background-color: orange;
+}
+
+/* indicates that the square is part of a word that has been found */ 
+#puzzle .found {
+  background-color: #A9E2F3;
+  color: white;
+}
+
+#puzzle .solved {
+  background-color: purple;
+  color: white;
+}
+
+/* indicates that all words have been found */
+#puzzle .complete {
+  background-color: green;
+}
+
+/**
+* Styles for the word list
+*/
+#wordslist {
+	position :relative;
+	margin-left:auto;
+	margin-right:auto;
+	border: 0px solid #ccc;
+	max-width: 30rem;
+	margin-top: 0;
+	padding: 0;
+	padding-left: 1em;
+	list-style-type: none;
+	text-align: left;
+	-moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+
+#wordslist li {
+  padding: 3px 0;
+  font: 1em sans-serif;
+}
+
+/* indicates that the word has been found */
+.wordFound {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/**
+* Styles for the controls
+*/
+#controls {
+  display: inline-block;
+  max-width: 30rem;
+  padding: 1em;
+  border: none;
+  text-align: left;
+}
+label {
+  white-space: nowrap;
+  margin-top: 1em;
+}
+#wordslist input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1em;
+}
+#wordslist input[type="number"] {
+  width: 2rem;
+}
+
+#create-grid, #solve {
+  display: block;
+  margin-top: 1rem;
+}
+#secret-word {
+  text-transform: uppercase;
+}
+
+#result-message {
+  font-size: 1.2em;
+}

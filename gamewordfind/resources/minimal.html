@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Word Find</title>
+    <link rel="stylesheet" type="text/css" href="wordfind.css" >
+</head>
+<body>
+    
+    <div id="mainpuzzlewords" role="main">
+		<ul id="wordslist">
+            <li style="display:none;" ><button  id="add-word">Add word</button></li>
+        </ul>
+		<div id="puzzle"></div>
+        <fieldset style="display:none;" id="controls">
+            <button id="solvePuzzle" >?</button>
+        </fieldset>
+    </div>
+	
+    <script type="text/javascript" src="jquery1.8.2.min.js"></script> 
+    <script type="text/javascript" src="wordfind.js"></script> 
+    <script type="text/javascript" src="wordfindgame.js"></script> 
+    <script>
+
+	var samplewords = ['openelearning','creative','elegante','farceuse','joviale'];
+
+	samplewords.forEach(function (word, index){
+		WordFindGame.insertWordBefore($('#add-word').parent(), word);
+	})
+	
+    /* Init */
+    function recreate() {
+        $('#result-message').removeClass();
+        var fillBlanks, game;
+
+		
+        //try {
+            game = new WordFindGame('#puzzle', {
+                allowedMissingWords: 1,
+                maxGridGrowth: 10,
+                fillBlanks: fillBlanks,
+                allowExtraBlanks: ['none', 'secret-word-plus-blanks'],
+                maxAttempts: 100,
+            });
+        //}catch (error){
+			//alert(error);
+             //$('#result-message').text(${error}, try to specify less ones`).css({color: 'red'});
+            return;
+        //}
+        wordfind.print(game);
+        if(window.game){
+            var emptySquaresCount = WordFindGame.emptySquaresCount();
+            //alert('Error there are empty squares');
+        }
+        window.game = game;
+    }
+    recreate();
+    // $('#solvePuzzle').click(() => game.solve());
+    </script>
+	
+</body>
+</html>
