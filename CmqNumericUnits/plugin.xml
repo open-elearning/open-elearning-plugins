@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<version>1.0</version>
+	<properties>	
+		<type>objet</type>
+		<id>CmqNumericUnits</id>
+		<title>Cmq Numeric Units</title>
+		<category>Questions</category>
+	</properties>
+	<display>
+		<screenImage>CmqNumericUnitsScreen.png</screenImage>
+		<screenTextMapping>
+			<svg width="248" height="60" >
+				<rect ref="0" x="146" y="1" width="60" height="50" ></rect>
+				<rect ref="1" x="35"  y="1" width="30" height="50" ></rect>
+			</svg>
+		</screenTextMapping>
+		<defaultText>Grams|0|100|0|1|1|numericincrent</defaultText>
+		<width>248</width>
+		<height>60</height>
+		<sizeText>14</sizeText>
+		<colorText>black</colorText>
+		<textAlign>center</textAlign>
+		<behavior>center</behavior>
+	</display>
+	<options>
+		<resize>0</resize>
+		<changeImage>0</changeImage>
+		<changeText>0</changeText>
+		<conditionalObject>1</conditionalObject>
+		<haveScore>1</haveScore>
+		<docTypeStrict>1</docTypeStrict>
+	</options>
+</plugin>

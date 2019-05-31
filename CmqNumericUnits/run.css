@@ -1,0 +1,180 @@
+
+.cmqnumericunits{
+	position:absolute;
+	text-align:center;
+	box-sizing: border-box;
+	border: 0px solid red;
+	-webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    -o-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+}
+
+.cmqnumericunits input{
+	width: 100%;
+    margin-bottom: 0;
+	border: 1px solid #ccc;
+	z-index:2;
+}
+
+.cmqnumericunits input::-ms-clear {
+    display: none;
+}
+
+.cmqnumericunits .input-group-btn {
+	padding: 6px 12px;
+    position: relative;
+	border: 1px solid #ccc;
+    white-space: nowrap;
+	display: table-cell;
+	border-collapse: separate;
+	font-size: 16px;
+	color:red;
+	vertical-align: middle;
+}
+
+.cmqnumericunits button {
+	padding: 13px;
+    text-rendering: auto;
+    color: initial;
+	line-height: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+	letter-spacing: normal;
+    word-spacing: normal;
+	align-items: flex-start;
+	background-color:rgb(221, 221, 221);
+    box-sizing: border-box;
+	border: none;
+	cursor:pointer;
+	outline:none;
+}
+.cmqnumericunits button:active{
+	border: none;
+	outline:none;
+	background-color:rgb(230, 230, 230);
+}
+.cmqnumericunits button:focus{
+	border: none;
+	outline:none;
+}
+
+.cmqnumericunits .input-group{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+	box-sizing: border-box;
+	padding-bottom:11px;
+	outline:none;
+}
+
+.cmqnumericunits .inputgroupLeft{
+	border-right-width:0px;
+	background-color:rgb(221, 221, 221);
+	padding-top:3px;
+	padding-bottom:2px;
+	padding-left:1px;
+	padding-right:1px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.cmqnumericunits .inputgroupRight{
+	border-left-width:0px;
+	background-color:rgb(221, 221, 221);
+	padding-top:3px;
+	padding-bottom:2px;
+	padding-left:1px;
+	padding-right:1px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.cmqnumericunits .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.cmqnumericunits  .input-group-btn{
+    display: table-cell;
+}
+.cmqnumericunits .input-group-addon:not(:first-child):not(:last-child),
+.cmqnumericunits .input-group-btn:not(:first-child):not(:last-child),
+.cmqnumericunits .input-group .form-control:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+.cmqnumericunits .input-group-addon {
+    padding : 2px 12px;
+    font-size : 13px;
+    font-weight : normal;
+    line-height : 1;
+    color : #555;
+    text-align : center;
+    background-color : #eee;
+    border : 1px solid #ccc;
+    border-radius : 4px;
+	overflow : hidden;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+	z-index:3;
+}
+
+.cmqnumericunits .input-group-btn{
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.cmqnumericunits .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	outline:none;
+}
+
+.cmqnumericunits input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+	text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+	-webkit-writing-mode: horizontal-tb;
+	border-collapse: separate;
+	outline:none;
+}
