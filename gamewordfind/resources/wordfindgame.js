@@ -230,11 +230,12 @@
           $('.selected').addClass('found');
           wordList.splice(i,1);
           $('input.word[value="' + curWord + '"]').addClass('wordFound');
+          $('input.word[value="' + curWord.toLowerCase() + '"]').addClass('wordFound');
         }
 
         if (wordList.length === 0) {
           $('.puzzleSquare').addClass('complete');
-		  endTurnGameWordFind();
+		      endTurnGameWordFind();
         }
       }
 
@@ -249,7 +250,7 @@
 	
     /* Constructor START */
     $('input.word').removeClass('wordFound');
-	
+    
     // Class properties, game initial config:
     wordList = getWords().sort();
 

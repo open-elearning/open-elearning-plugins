@@ -2,6 +2,7 @@
 var fctFinishGameWordFind = false;
 var isFinishGameWordFind = "";
 var eventFinishGameWordFind = false;
+
 function onPaint(obj){
 	
 	var h = '';
@@ -16,7 +17,7 @@ function onPaint(obj){
     h += '</fieldset>';
     h += '</div>';
 	
-	setTimeout("appliqueGameWordFind(" + obj.id + ")",2000);
+	setTimeout("appliqueGameWordFind(" + obj.id + ")",1000);
 	
 	return h;
 	
@@ -77,11 +78,13 @@ function appliqueGameWordFind(i){
 		if(obj.fields[9]!=''){
 			samplewords.push(obj.fields[9]);
 		}
+		if(obj.fields[10]!=''){
+			samplewords.push(obj.fields[10]);
+		}
 	}
 	
-	
 	samplewords.forEach(function (word, index){
-		WordFindGame.insertWordBefore($('#add-word').parent(), word);
+		WordFindGame.insertWordBefore($('#add-word').parent(), word.toLocaleLowerCase() );
 	})
 	
     /* Init */
