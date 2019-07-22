@@ -1,0 +1,37 @@
+/*Open eLearning 2019*/
+
+.panelBubblesUi{
+    position : absolute;
+    left : 0px;
+    bottom : 55px;
+    padding : 0px;
+    width: 25px;
+	height: 30px;
+    color:black;
+    background-color: beige;
+    border : solid 1px gray;
+    text-align: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+    user-select: none;
+    cursor:pointer;
+}
+.panelBubblesUiInner{
+    position : absolute;
+    left : -12px;
+    bottom : 55px;
+    height: 200px;
+    padding:0px;
+    padding-right : 5px;
+    padding-left : 5px;
+    width: 0px;
+    color:black;
+    background-color: white;
+    border : solid 1px gray;
+    overflow: hidden;
+}
