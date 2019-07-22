@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+	<version>1.0</version>
+
+	<properties>
+		<type>ui</type>
+		<id>ui-interface-panel</id>
+		<title>ui-interface-panel</title>
+		<category>ui</category>
+	</properties>
+	
+	<display>
+		<width>550</width>
+		<height>650</height>
+		<sizeText>18</sizeText>
+		<colorText>black</colorText>
+		<textAlign>center</textAlign>
+		<behavior>center</behavior>
+	</display>
+	<windows>
+
+	</windows>
+	<options>
+		<resize>0</resize>
+		<changeImage>0</changeImage>
+		<changeText>0</changeText>
+		<conditionalObject>0</conditionalObject>
+		<docTypeStrict>1</docTypeStrict>
+	</options>
+
+	<fields>
+	</fields>
+	
+</plugin>
